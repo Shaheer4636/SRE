@@ -146,4 +146,16 @@ Upgrade successfully ran after all plugin and environment issues were resolved.
 * Verified PHP extensions: `gd`, `intl`, `sodium`, `soap` installed
 * Verified database version:
 
-````
+# Issues Expected
+### Multiple Versions of moodle to be removed via moodle_old
+
+```mv /var/www/html/moodle /var/www/html/moodle_old```
+
+```cd /tmp
+wget -O moodle-4.1.5.tgz https://download.moodle.org/download.php/direct/stable401/moodle-latest-401.tgz
+tar -xvzf moodle-4.1.5.tgz
+mv moodle /var/www/html/moodle```
+
+```cp /var/www/html/moodle_old/config.php /var/www/html/moodle/```
+
+
