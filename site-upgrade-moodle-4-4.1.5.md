@@ -87,9 +87,7 @@ sudo systemctl restart httpd
 ### Increase `max_input_vars`
 
 ```bash
-sudo nano /etc/php.ini
-# Change or add:
-max_input_vars = 5000
+sudo sed -i -E 's/^\s*;?\s*max_input_vars\s*=.*/max_input_vars = 5000/' /etc/php.ini
 ```
 
 ```bash
