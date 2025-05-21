@@ -148,11 +148,4 @@ Upgrade successfully ran after all plugin and environment issues were resolved.
 * Verified PHP extensions: `gd`, `intl`, `sodium`, `soap` installed
 * Verified database version:
 
-```sql
-SELECT value FROM mdl_config WHERE name = 'version';
-```
-
-Expected output: `2022112800.00` or higher
-
-
 ````
