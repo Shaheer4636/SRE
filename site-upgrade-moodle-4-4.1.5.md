@@ -164,5 +164,5 @@ mv moodle /var/www/html/moodle
 cp /var/www/html/moodle_old/config.php /var/www/html/moodle/```
 
 ### PHP package is missing
-```sudo yum install -y php-sodium```
+bash```sudo yum install -y php-sodium```
 install the package by this way 
