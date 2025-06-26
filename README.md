@@ -4,6 +4,8 @@
 
 Built for SRE and Platform teams, this tool actively monitors the health of services, checks for latency and HTTP failures, and alerts on any anomalies via Slack or Email.
 
+Stack Used (to be used): html, golang, powershell, python, yml, and other scripting
+
 ---
 
 ## Why Use It?
