@@ -1,0 +1,22 @@
+interval_seconds: 60
+
+endpoints:
+  - name: AuthService
+    url: https://auth.myservice.com/health
+    latency_threshold_ms: 500
+    alert_on: [500, 502, 503]
+
+  - name: ML API
+    url: https://mlapi.mycompany.ai/ping
+    latency_threshold_ms: 1000
+    alert_on: [404, 500]
+
+alert:
+  slack_webhook: "https://hooks.slack.com/services/TOKEN"
+  email:
+    smtp_server: "smtp.mail.com"
+    port: 587
+    from: "sre-alerts@domain.com"
+    to: "oncall@domain.com"
+    username: "sre-alerts@domain.com"
+    password: "YOUR_PASSWORD"
